@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad0d233b-d5cd-4fd1-9a80-4a91c4d0ef65">
+  <producedTypes>
+    <objectType typeId="01fb9cfe-02a3-4730-9b59-55c961348b3e" valueTypeId="4a2d3515-7fff-4906-bd9d-aa6a6b0df7ce"/>
+    <refType typeId="bcd975f1-dfdd-4eef-a48b-1633eda7fed3" valueTypeId="33f4b3a3-d953-4ddb-988a-9326803ad4f6"/>
+    <selectionType typeId="bd37fcb8-740f-4909-8875-d5450e3b71a3" valueTypeId="596b276d-e7da-4d7e-9927-e3e2091601f4"/>
+    <listType typeId="77d60885-98e5-4843-ad08-8227533c4c0a" valueTypeId="fc817ed4-f882-4d01-a7f1-cab96131fb35"/>
+    <managerType typeId="d378245c-e07c-4924-9244-ba014d5850cc" valueTypeId="689cf89a-b0b2-4d50-b130-806596a1bfe1"/>
+  </producedTypes>
+  <name>ИнформационныеБазыКластера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информационные базы кластера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИнформационныеБазыКластера.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ИнформационныеБазыКластера.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Информационная база кластера</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Информационные базы кластера</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.КластерыСерверов</owners>
+  <standardAttributes>
+    <name>Owner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кластер</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+  </standardAttributes>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <codeSeries>WithinOwnerSubordination</codeSeries>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ИнформационныеБазыКластера.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ИнформационныеБазыКластера.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="82a36f4d-79c2-40bf-83b1-cdbfda68dd1c">
+    <name>ИмяВКластере</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя в кластере</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>128</length>
+      </stringQualifiers>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="3eb8d9fc-0436-47b3-9c7c-fa60d905c56a">
+    <name>АдминистраторИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Администратор информационной базы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиАдминистрирования</types>
+    </type>
+  </attributes>
+  <attributes uuid="d1fdc4e3-5932-4ee8-8aaa-36b37bbb79d6">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+  </attributes>
+  <forms uuid="d80f13f6-2278-4f1b-8481-58415a237f2a">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база кластера</value>
+    </synonym>
+  </forms>
+  <forms uuid="3be9a064-328a-44c4-afcc-521d03d8296b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационные базы кластера</value>
+    </synonym>
+  </forms>
+</mdclass:Catalog>

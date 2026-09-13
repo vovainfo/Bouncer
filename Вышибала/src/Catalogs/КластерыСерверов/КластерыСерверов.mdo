@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71cdb00b-d285-4b50-8c17-80e969a378f8">
+  <producedTypes>
+    <objectType typeId="35fbaaaa-83b8-4a19-92ba-d36d94e2edaa" valueTypeId="cb3d1ec8-c82b-451f-977b-704c15e30696"/>
+    <refType typeId="4b753e2d-5a34-40cc-b3c2-4ba1ca9d286f" valueTypeId="cd5518f1-af57-4fa1-9f9f-c83a80915912"/>
+    <selectionType typeId="ffa738a0-47c7-4145-a935-0107e3771475" valueTypeId="66d0dc1d-c526-4f2d-b0fa-7f8f2247d349"/>
+    <listType typeId="ca9b14a2-9e5e-42d6-a790-cf6469a1b445" valueTypeId="49be6ad6-7b4f-4510-a34d-869a132904dd"/>
+    <managerType typeId="5537b466-2fc9-42f1-83a7-5e7441d645c5" valueTypeId="d2c0481b-7443-4bc5-88c5-0fe010d987f3"/>
+  </producedTypes>
+  <name>КластерыСерверов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кластеры серверов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КластерыСерверов.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.КластерыСерверов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Кластер серверов</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Кластеры серверов</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КластерыСерверов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.КластерыСерверов.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="53f2e1e1-e593-4050-8d32-ea710bf970f8">
+    <name>АдресСервераАдминистрирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес сервера администрирования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="72adcb5a-a4f3-48c2-99f3-cd9a483be2c8">
+    <name>ПортСервераАдминистрирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт сервера администрирования</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="b38a0046-12d9-4250-8121-472ea0ff1515">
+    <name>ПортКластера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт кластера</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="7613dec2-094d-43da-8eba-b9f913b6f2f7">
+    <name>АдминистраторКластера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Администратор кластера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиАдминистрирования</types>
+    </type>
+  </attributes>
+  <attributes uuid="4826e774-70c5-4246-875c-42171dd8b63d">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+  </attributes>
+  <forms uuid="87e81ed9-14b6-49cf-aa3e-6e26ed3537a0">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кластер серверов</value>
+    </synonym>
+  </forms>
+  <forms uuid="de44b057-04cb-42b6-85cc-e026280e3d94">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кластеры серверов</value>
+    </synonym>
+  </forms>
+</mdclass:Catalog>

@@ -47,6 +47,7 @@
   <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.ПодключаемыеОтчетыИОбработки</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
+  <subsystems>Subsystem.УправлениеСеансами</subsystems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <styleItems>StyleItem.ЗапрещенноеПравоДоступаЦвет</styleItems>
   <styleItems>StyleItem.ГруппаВариантовОтчетовЦвет</styleItems>
@@ -726,6 +727,7 @@
   <commonModules>CommonModule.ФизическиеЛицаКлиентСервер</commonModules>
   <commonModules>CommonModule.ФизическиеЛицаКлиентСерверЛокализация</commonModules>
   <commonModules>CommonModule.ОбновлениеИнформационнойБазыВШБ</commonModules>
+  <commonModules>CommonModule.НастройкиАдминистрированияКластеров</commonModules>
   <commonAttributes>CommonAttribute.ОтредактированныеПредопределенныеРеквизиты</commonAttributes>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
@@ -978,6 +980,9 @@
   <catalogs>Catalog.РассылкиОтчетов</catalogs>
   <catalogs>Catalog.СтраныМира</catalogs>
   <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
+  <catalogs>Catalog.УчетныеЗаписиАдминистрирования</catalogs>
+  <catalogs>Catalog.КластерыСерверов</catalogs>
+  <catalogs>Catalog.ИнформационныеБазыКластера</catalogs>
   <enums>Enum.ВариантыПериода</enums>
   <enums>Enum.ВариантыПубликацииДополнительныхОтчетовИОбработок</enums>
   <enums>Enum.ВидыДополнительныхОтчетовИОбработок</enums>
