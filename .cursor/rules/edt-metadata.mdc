@@ -1,0 +1,16 @@
+---
+description: Безопасная работа с метаданными EDT. Use when creating, renaming, deleting, or editing .mdo, forms, roles, attributes, or UUIDs.
+globs: **/*.{mdo,form}
+alwaysApply: false
+---
+
+# Метаданные EDT
+
+Полный текст: `rules/ru/edt-metadata.md`.
+
+- Создать объект/реквизит — `create_metadata` по FQN, не руками в XML.
+- Свойства и тип — `modify_metadata` (сначала `get_metadata_details` с `assignable: true`).
+- Переименовать/удалить — preview без `confirm`, затем `confirm: true`.
+- `find_references` только для top-level (`Catalog.X`). Для реквизита — preview `rename_metadata_object`.
+- UUID только криптографически случайные v4, не плейсхолдеры.
+- `Form.form` руками — крайний случай: структурный инструмент не может выразить изменение, пользователь явно разрешил риск.

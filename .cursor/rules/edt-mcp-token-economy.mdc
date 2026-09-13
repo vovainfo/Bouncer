@@ -1,0 +1,23 @@
+---
+description: Экономия токенов EDT-MCP на конфигурации с БСП. Use when reading modules, searching code, listing metadata, or fetching project errors.
+alwaysApply: true
+---
+
+# Экономия токенов
+
+Полный текст: `rules/ru/edt-mcp-token-economy.md`. На БСП один `read_module_source` без диапазона стоит десятки тысяч токенов.
+
+Иерархия «дешёвый → дорогой»:
+
+- `get_problem_summary` → `get_project_errors` (с `severity`, `objects`, `limit`)
+- `get_module_structure` → `read_method_source` → `read_module_source`
+- `search_in_code` `count` → `files` → `full`
+- `get_metadata_objects` → `get_metadata_details` (`full: false`, батч `objectFqns`)
+
+## Правила
+
+- Читай метод, не модуль. `read_module_source` только с `startLine`/`endLine`.
+- Всегда фильтруй: `metadataType`, `nameFilter`, `severity`, `objects`, `contains`.
+- Не повторяй один и тот же тяжёлый запрос. Крупные срезы можно сохранить в `.cache/edt-mcp/` (не коммитить).
+- `get_form_layout_snapshot` — `mode: compact`, не `full`.
+- Не используй Cursor `Grep`/`Read` по `.bsl` вместо `search_in_code` / `read_method_source`.

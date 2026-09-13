@@ -1,0 +1,29 @@
+---
+description: Безопасная запись BSL через write_module_source. Use when editing BSL, methods, modules, or calling write_module_source.
+alwaysApply: true
+---
+
+# Запись BSL
+
+Полный текст: `rules/ru/edt-mcp-write-safety.md`. Прочитай его до первой записи в сессии.
+
+| mode | Действие |
+|---|---|
+| `searchReplace` (default) | Заменяет уникальный `oldSource`. Для любой точечной правки |
+| `append` | Дописывает в конец существующего модуля |
+| `replace` | Перезаписывает **весь** модуль. Только новый файл, пустой модуль или явная полная переработка |
+
+`replace` для одного метода уничтожит остальной код. Отката в EDT-MCP нет.
+
+## Алгоритм правки метода
+
+1. `read_method_source` — сохрани текст и `contentHash`.
+2. `write_module_source` с `mode: "searchReplace"`, точным `oldSource` и новым `source` (метод целиком, включая `&НаКлиенте` / `&НаСервере`).
+3. Если `oldSource not found` или `multiple times` — перечитай, не повторяй вслепую.
+4. `get_project_errors` с `objects` на изменённый объект.
+
+## Запреты
+
+- Не правь `.bsl` через `StrReplace` / `Write`.
+- Не ставь `skipSyntaxCheck: true`, чтобы обойти ошибки баланса блоков.
+- Перед откатом держи в контексте старый и новый текст; обратный `searchReplace` — сразу.
