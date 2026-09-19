@@ -111,6 +111,10 @@
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
+    <handlers>
+      <event>BeforeAddRow</event>
+      <name>СписокПередНачаломДобавления</name>
+    </handlers>
     <searchStringAddition>
       <name>СписокСтрокаПоиска</name>
       <id>5</id>
@@ -268,6 +272,19 @@
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
     </extInfo>
+  </attributes>
+  <attributes>
+    <name>ПользовательОтбора</name>
+    <id>2</id>
+    <valueType>
+      <types>CatalogRef.Пользователи</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <parameters>
     <name>Пользователь</name>
