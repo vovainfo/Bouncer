@@ -13,4 +13,8 @@
   <content>DataProcessor.УправлениеСеансами</content>
   <content>CommonModule.СеансыИнформационныхБаз</content>
   <content>CommonModule.НастройкиАдминистрированияКластеров</content>
+  <content>InformationRegister.РазрешенныеИнформационныеБазы</content>
+  <content>Role.ОператорТехподдержки</content>
+  <content>Role.ОграниченныйОператорТехподдержки</content>
+  <content>CommonModule.ПраваУправленияСеансами</content>
 </mdclass:Subsystem>

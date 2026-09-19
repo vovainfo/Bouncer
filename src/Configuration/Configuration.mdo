@@ -20,7 +20,7 @@
   <defaultRoles>Role.АдминистраторСистемы</defaultRoles>
   <defaultRoles>Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</defaultRoles>
   <vendor>Гуменников Владимир</vendor>
-  <version>1.0.1.1</version>
+  <version>1.0.1.3</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -524,6 +524,8 @@
   <roles>Role.ЧтениеДополнительныхОтчетовИОбработок</roles>
   <roles>Role.ЧтениеРассылокОтчетов</roles>
   <roles>Role.ЧтениеУчетныхЗаписейЭлектроннойПочты</roles>
+  <roles>Role.ОператорТехподдержки</roles>
+  <roles>Role.ОграниченныйОператорТехподдержки</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияКакВыполнитьНастройкуМакетаOfficeOpen</commonTemplates>
@@ -729,6 +731,7 @@
   <commonModules>CommonModule.ОбновлениеИнформационнойБазыВШБ</commonModules>
   <commonModules>CommonModule.НастройкиАдминистрированияКластеров</commonModules>
   <commonModules>CommonModule.СеансыИнформационныхБаз</commonModules>
+  <commonModules>CommonModule.ПраваУправленияСеансами</commonModules>
   <commonAttributes>CommonAttribute.ОтредактированныеПредопределенныеРеквизиты</commonAttributes>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
@@ -1098,4 +1101,5 @@
   <informationRegisters>InformationRegister.ФиксацияОбработкиДанныхОбработчиками</informationRegisters>
   <informationRegisters>InformationRegister.УдалитьБезопасноеХранилищеДанныхОбластейДанных</informationRegisters>
   <informationRegisters>InformationRegister.УдалитьЗамерыВремени3</informationRegisters>
+  <informationRegisters>InformationRegister.РазрешенныеИнформационныеБазы</informationRegisters>
 </mdclass:Configuration>

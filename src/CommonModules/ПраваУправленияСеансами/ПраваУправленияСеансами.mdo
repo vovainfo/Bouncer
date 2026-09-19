@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13a04beb-ab21-4108-a1e9-9e97d0eda7bd">
+  <name>ПраваУправленияСеансами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Права управления сеансами</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

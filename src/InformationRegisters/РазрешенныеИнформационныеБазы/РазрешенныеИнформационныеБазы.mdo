@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94decae0-0f12-4c67-a3b4-00877ad1bf75">
+  <producedTypes>
+    <selectionType typeId="f4789cd7-729a-4ba9-a830-d6162c9693f5" valueTypeId="624d9221-a7c0-4776-bca1-9e205a2debbf"/>
+    <listType typeId="53a88f99-7ea5-45b1-9486-99fcd70995d3" valueTypeId="810a557b-dc48-4626-9892-edf91dbd622e"/>
+    <managerType typeId="7328b8bc-2fc0-4b8c-8e68-19769b1520cc" valueTypeId="9bae24a2-62ff-4686-a904-1a2f3cc3c4b7"/>
+    <recordSetType typeId="baba49a9-ca39-4ed7-b1e8-cc8a4afa0af5" valueTypeId="ce5b5981-dc90-4fb5-9640-0b39cce6366c"/>
+    <recordKeyType typeId="e171b6d2-37d5-4ab0-a6bf-10403c758090" valueTypeId="ecef0f09-793d-4846-b756-c37026356996"/>
+    <recordType typeId="2014067a-aeeb-4cd8-8c8e-2e0c584c4118" valueTypeId="8115118a-ab3e-4a03-b821-36e2b42e2671"/>
+    <recordManagerType typeId="4edeff7b-142b-405f-8891-8b5dc40f9917" valueTypeId="daf155e2-24b8-42d5-b9ad-0393bcf4bf7e"/>
+  </producedTypes>
+  <name>РазрешенныеИнформационныеБазы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрешенные информационные базы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.РазрешенныеИнформационныеБазы.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.РазрешенныеИнформационныеБазы.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Разрешенная информационная база</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Разрешенные информационные базы</value>
+  </listPresentation>
+  <dimensions uuid="f0f65cdb-3d2a-442b-bfb1-ca9fe21d1c65">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+    <createOnInput>DontUse</createOnInput>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2595b527-82a7-4413-8128-99c0e5ca906c">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазыКластера</types>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+    <createOnInput>DontUse</createOnInput>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="87a2528c-1d14-4f9c-8f5a-3ced4f44abcb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешенные информационные базы</value>
+    </synonym>
+  </forms>
+  <forms uuid="d4263d98-c728-4c0f-aa05-6c1164e0937c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешенная информационная база</value>
+    </synonym>
+  </forms>
+</mdclass:InformationRegister>

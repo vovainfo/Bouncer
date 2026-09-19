@@ -1980,6 +1980,23 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>МожноУправлятьБлокировкой</name>
+    <title>
+      <key>ru</key>
+      <value>Можно управлять блокировкой</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ОбновитьСостояние</name>
     <title>
