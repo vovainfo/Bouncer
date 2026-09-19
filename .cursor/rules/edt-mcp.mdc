@@ -1,0 +1,51 @@
+---
+description: EDT-MCP standing policy and task router for the Вышибала 1C project
+alwaysApply: true
+---
+
+# EDT-MCP
+
+Работай с этой конфигурацией через EDT-MCP. Общайся по-русски.
+
+- Политика: `rules/ru/INDEX.md`
+- Общие правила skills: `.cursor/skills/COMMON.md`
+- Роутер: `.cursor/skills/ROUTER.md`
+- Проект EDT: `Вышибала` (совместимость 8.3.27, БСП есть)
+
+Если `rules/` и skill расходятся — остановись и разреши конфликт, не выбирай более мягкий путь молча.
+
+## NEVER
+
+- Не читай и не правь `.bsl` файловыми инструментами Cursor (`Read` / `StrReplace` / `Write` / `Grep`). Только `read_method_source`, `read_module_source`, `write_module_source`, `search_in_code`.
+- Не вызывай `write_module_source` с `mode: replace` для одного метода — это перезапишет весь модуль. См. `edt-mcp-write-safety`.
+- Не ставь плейсхолдер-UUID (`00000000-...`) в `.mdo`.
+- Не делай `git reset --hard` / `push --force` / `checkout .` без явной просьбы.
+- Не выдумывай поведение инструментов — схема MCP и `get_tool_guide`.
+
+## ALWAYS
+
+- Перед правкой BSL — `read_method_source`, не весь модуль.
+- `rename_metadata_object` / `delete_metadata` сначала без `confirm` (preview), потом с `confirm: true`.
+- После записи кода — `get_project_errors` или `get_problem_summary`.
+- Перед новым кодом — `search_in_code` и паттерны проекта; для БСП читай `bsl-ssl`.
+- Сомнения по платформе — `get_platform_documentation`.
+- Метаданные ищи по программному `Name`, не по синониму. Двуязычен только тип FQN (`Catalog` / `Справочник`).
+
+## Роутер задач
+
+Загрузи один наименьший подходящий skill из `.cursor/skills/`:
+
+| Задача | Skill |
+|---|---|
+| Сессия, проект, toolset | `edt-mcp-project-session` |
+| Разобрать код, влияние, ссылки | `edt-mcp-project-code-research` |
+| Точечная правка BSL | `edt-mcp-project-local-fix` |
+| Метаданные, роли, RLS | `edt-mcp-project-metadata` |
+| Управляемые формы | `edt-mcp-project-forms` |
+| Запрос или СКД | `edt-mcp-project-query-dcs` |
+| Отладка, запуск, журнал | `edt-mcp-project-runtime-debug` |
+| YAXUnit | `edt-mcp-project-yaxunit` |
+| Ревалидация, ИБ, clean/resync | `edt-mcp-project-maintenance` |
+| Явный запрос к 1C:Workmate | `edt-mcp-project-workmate` |
+
+`get_tool_guide` — только для незнакомого, разрушительного или каскадного вызова.

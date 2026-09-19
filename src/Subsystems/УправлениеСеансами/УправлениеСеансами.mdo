@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0f7be3b-3377-4777-a3fe-183fbce877ac">
+  <name>УправлениеСеансами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление сеансами</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.УчетныеЗаписиАдминистрирования</content>
+  <content>Catalog.КластерыСерверов</content>
+  <content>Catalog.ИнформационныеБазыКластера</content>
+  <content>DataProcessor.УправлениеСеансами</content>
+  <content>CommonModule.СеансыИнформационныхБаз</content>
+  <content>CommonModule.НастройкиАдминистрированияКластеров</content>
+</mdclass:Subsystem>

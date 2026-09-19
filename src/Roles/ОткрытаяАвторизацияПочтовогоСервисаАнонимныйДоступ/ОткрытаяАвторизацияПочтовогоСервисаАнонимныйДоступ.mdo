@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e89b4605-00bb-4856-871f-0fd446fc78e1">
+  <name>ОткрытаяАвторизацияПочтовогоСервисаАнонимныйДоступ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Открытая авторизация почтового сервиса (анонимный доступ)</value>
+  </synonym>
+</mdclass:Role>
