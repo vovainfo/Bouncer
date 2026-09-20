@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bab277fa-14d5-45da-9eb9-9329e48124ab">
+  <producedTypes>
+    <selectionType typeId="c55c092f-962b-4de8-819f-eef6f1356f99" valueTypeId="dabb4f14-dbaf-4de3-973a-19500cd92a75"/>
+    <listType typeId="f465fc0f-7651-4445-a243-6f3f95b4e65d" valueTypeId="3ff6ca20-2001-4838-9663-d0dd91b5fce8"/>
+    <managerType typeId="2ef594f5-47cd-4eea-8d35-5e04b355e2dd" valueTypeId="100a75f2-982b-4bce-a0f6-624df0ed0aa5"/>
+    <recordSetType typeId="560d9224-0ee9-433f-b7ac-0f0be077e10b" valueTypeId="34403ce4-d7a6-4780-943b-e750f3616667"/>
+    <recordKeyType typeId="e1989986-7559-4c86-b417-1940a929f0b2" valueTypeId="81dc36f8-85ed-48bd-92dd-34a266756e69"/>
+    <recordType typeId="518ccc7b-0bdf-4e36-bb9f-7a58d293c4fd" valueTypeId="3c00b88c-38c2-4a2d-aaf4-b1731c232a87"/>
+    <recordManagerType typeId="47642c8a-9fa1-48b1-b999-e322cbfec394" valueTypeId="61820791-5185-4b9d-b6be-3a945e073ec8"/>
+  </producedTypes>
+  <name>ПротоколОперацийУправленияСеансами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Протокол операций управления сеансами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ПротоколОперацийУправленияСеансами.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Запись протокола операции управления сеансами</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Протокол операций управления сеансами</value>
+  </listPresentation>
+  <resources uuid="1998c156-09d3-4a4d-af9c-f4fca8d07924">
+    <name>Успешно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Успешно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </resources>
+  <resources uuid="d7dde503-593f-4b6b-8def-96f88250c124">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </resources>
+  <attributes uuid="e68c150f-d7d4-4356-8044-6b1acee90c3a">
+    <name>НомерСеанса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер сеанса</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="5f37bc5c-6869-4898-85cc-ce95686e11d4">
+    <name>ПользовательСеанса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь сеанса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <dimensions uuid="c28b646f-c978-4407-8629-634ae7dbd63a">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <indexing>Index</indexing>
+  </dimensions>
+  <dimensions uuid="8ff960b6-ed8a-4260-a5fa-b278e20f3c1a">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеБазыКластера</types>
+    </type>
+    <indexing>Index</indexing>
+  </dimensions>
+  <dimensions uuid="11ace8c6-ee51-494f-b431-6c40f28917b1">
+    <name>Кластер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кластер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КластерыСерверов</types>
+    </type>
+  </dimensions>
+  <dimensions uuid="15364887-e718-49db-9049-1581830b2c06">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОперацииУправленияСеансами</types>
+    </type>
+  </dimensions>
+  <dimensions uuid="a7d07f68-c58a-436e-845f-7c9b1e1337ff">
+    <name>ИдентификаторСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор события</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+  </dimensions>
+  <forms uuid="fbfa14a0-1054-408e-95cd-69c1640681fb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Протокол операций управления сеансами</value>
+    </synonym>
+  </forms>
+</mdclass:InformationRegister>

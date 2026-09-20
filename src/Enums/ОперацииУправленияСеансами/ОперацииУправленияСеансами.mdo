@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6181ae5-b901-4e51-b3b7-ffe1c7f324a8">
+  <producedTypes>
+    <refType typeId="0b676258-ea2c-44d9-878b-9bc7e88cfc86" valueTypeId="ab207d2f-9b2f-4930-b7ff-ab3232ca9005"/>
+    <listType typeId="fda70ab2-0936-4478-945d-05d37f4ff484" valueTypeId="ee99ad81-26c7-4ac3-a6a5-f467ed0e3daf"/>
+    <managerType typeId="82c2b000-79b0-400c-8551-fa1ce3be4060" valueTypeId="975c2b13-eb15-4a46-8535-ee10f4728141"/>
+  </producedTypes>
+  <name>ОперацииУправленияСеансами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Операции управления сеансами</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="41b7aaeb-bffd-4a30-9bd3-cf65c25146d1">
+    <name>ЗавершениеСеанса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершение сеанса</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9a33eb06-1743-4d3e-886f-e5aa97265e88">
+    <name>ПакетноеЗавершениеСеансов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пакетное завершение сеансов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="482ff01d-af8b-48a0-8a61-7f32bc61f63f">
+    <name>УстановкаБлокировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установка блокировки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="24db96c4-e111-4922-aa84-3d31a9b11fb6">
+    <name>СнятиеБлокировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Снятие блокировки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="96e9da6d-8f1b-44dd-bf81-d9cf2ea8ebaa">
+    <name>ИзменениеНастроекАдминистрирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение настроек администрирования</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0e484841-53e7-4e93-8b92-6c2169cd71b8">
+    <name>ОтказВДоступе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отказ в доступе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7efeff44-52f3-4500-ba8a-053e16ac11b1">
+    <name>ОшибкаАдминистрирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка администрирования</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

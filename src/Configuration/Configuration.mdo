@@ -733,6 +733,7 @@
   <commonModules>CommonModule.НастройкиАдминистрированияКластеров</commonModules>
   <commonModules>CommonModule.СеансыИнформационныхБаз</commonModules>
   <commonModules>CommonModule.ПраваУправленияСеансами</commonModules>
+  <commonModules>CommonModule.ПротоколУправленияСеансами</commonModules>
   <commonAttributes>CommonAttribute.ОтредактированныеПредопределенныеРеквизиты</commonAttributes>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
@@ -799,6 +800,7 @@
   <scheduledJobs>ScheduledJob.РассылкаОтчетов</scheduledJobs>
   <scheduledJobs>ScheduledJob.УдалениеУстаревшихПараметровРаботыВерсийРасширений</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЭкспортОценкиПроизводительности</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ОчисткаПротоколаОперацийУправленияСеансами</scheduledJobs>
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <functionalOptions>FunctionalOption.ВыполнятьЗамерыПроизводительности</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьГруппыВнешнихПользователей</functionalOptions>
@@ -912,6 +914,7 @@
   <constants>Constant.УчетнаяЗаписьДляВосстановленияПароля</constants>
   <constants>Constant.ХранитьИсториюРассылкиОтчетов</constants>
   <constants>Constant.УдалитьНастройкиВходаПользователей</constants>
+  <constants>Constant.СрокХраненияПротоколаОперацийДней</constants>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>
   <commonForms>CommonForm.ВопросОбУстановкеРасширения1СПредприятия</commonForms>
   <commonForms>CommonForm.ВосстановлениеПаролей</commonForms>
@@ -1011,6 +1014,7 @@
   <enums>Enum.УровниПроизводительности</enums>
   <enums>Enum.ФорматыВыгрузкиОбъектов</enums>
   <enums>Enum.ФорматыСохраненияОтчетов</enums>
+  <enums>Enum.ОперацииУправленияСеансами</enums>
   <reports>Report.АнализЖурналаРегистрации</reports>
   <reports>Report.ИзменениеУчастниковГруппДоступа</reports>
   <reports>Report.АнализПравДоступа</reports>
@@ -1103,4 +1107,5 @@
   <informationRegisters>InformationRegister.УдалитьБезопасноеХранилищеДанныхОбластейДанных</informationRegisters>
   <informationRegisters>InformationRegister.УдалитьЗамерыВремени3</informationRegisters>
   <informationRegisters>InformationRegister.РазрешенныеИнформационныеБазы</informationRegisters>
+  <informationRegisters>InformationRegister.ПротоколОперацийУправленияСеансами</informationRegisters>
 </mdclass:Configuration>

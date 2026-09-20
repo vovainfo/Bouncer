@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a13ea087-7920-4b84-bff5-c45b41029e50">
+  <producedTypes>
+    <managerType typeId="5211a8bf-abd0-420b-8de9-7eba256502ca" valueTypeId="22a0debc-ee18-4a03-a557-18f75d0f7e0b"/>
+    <valueManagerType typeId="45add0c3-1c89-41d3-9fed-805fc3b56d09" valueTypeId="bb7a45f2-4097-4a44-a71a-0c384a045fcd"/>
+    <valueKeyType typeId="921d791e-5eb4-484d-ab9d-70b9253a7638" valueTypeId="aba642b0-1100-4227-8464-4825fe837a1e"/>
+  </producedTypes>
+  <name>СрокХраненияПротоколаОперацийДней</name>
+  <synonym>
+    <key>ru</key>
+    <value>Срок хранения протокола операций (дней)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>4</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>Срок хранения записей регистра Протокол операций управления сеансами. Значение 0 означает, что устаревшие записи не удаляются.</value>
+  </explanation>
+  <toolTip>
+    <key>ru</key>
+    <value>Количество дней хранения записей протокола. 0 - не удалять.</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

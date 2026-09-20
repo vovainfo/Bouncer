@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1f947587-58c4-46ed-bb00-0ec2a797e04c">
+  <name>ОчисткаПротоколаОперацийУправленияСеансами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистка протокола операций управления сеансами</value>
+  </synonym>
+  <methodName>CommonModule.ПротоколУправленияСеансами.ОчиститьУстаревшиеЗаписи</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

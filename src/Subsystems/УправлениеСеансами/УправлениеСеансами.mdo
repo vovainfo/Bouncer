@@ -17,4 +17,9 @@
   <content>Role.ОператорТехподдержки</content>
   <content>Role.ОграниченныйОператорТехподдержки</content>
   <content>CommonModule.ПраваУправленияСеансами</content>
+  <content>Enum.ОперацииУправленияСеансами</content>
+  <content>InformationRegister.ПротоколОперацийУправленияСеансами</content>
+  <content>CommonModule.ПротоколУправленияСеансами</content>
+  <content>Constant.СрокХраненияПротоколаОперацийДней</content>
+  <content>ScheduledJob.ОчисткаПротоколаОперацийУправленияСеансами</content>
 </mdclass:Subsystem>
