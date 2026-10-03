@@ -6,6 +6,7 @@
     <value>Очистка протокола операций управления сеансами</value>
   </synonym>
   <methodName>CommonModule.ПротоколУправленияСеансами.ОчиститьУстаревшиеЗаписи</methodName>
+  <use>true</use>
   <predefined>true</predefined>
   <restartCountOnFailure>3</restartCountOnFailure>
   <restartIntervalOnFailure>10</restartIntervalOnFailure>
