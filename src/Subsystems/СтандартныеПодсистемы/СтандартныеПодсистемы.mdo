@@ -23,4 +23,5 @@
   <subsystems>РассылкаОтчетов</subsystems>
   <subsystems>РегламентныеЗадания</subsystems>
   <subsystems>УправлениеДоступом</subsystems>
+  <subsystems>ЗавершениеРаботыПользователей</subsystems>
 </mdclass:Subsystem>
