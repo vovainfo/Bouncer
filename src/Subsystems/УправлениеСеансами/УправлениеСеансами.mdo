@@ -22,4 +22,5 @@
   <content>CommonModule.ПротоколУправленияСеансами</content>
   <content>Constant.СрокХраненияПротоколаОперацийДней</content>
   <content>ScheduledJob.ОчисткаПротоколаОперацийУправленияСеансами</content>
+  <content>DataProcessor.НазначениеИнформационныхБазОператорам</content>
 </mdclass:Subsystem>
