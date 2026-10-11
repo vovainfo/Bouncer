@@ -31,6 +31,7 @@
     </functionality>
   </usedMobileApplicationFunctionalities>
   <defaultLanguage>Language.Русский</defaultLanguage>
+  <logo/>
   <splash/>
   <configurationInformationAddress>
     <key>ru</key>
