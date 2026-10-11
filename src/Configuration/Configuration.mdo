@@ -32,6 +32,10 @@
   </usedMobileApplicationFunctionalities>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <splash/>
+  <configurationInformationAddress>
+    <key>ru</key>
+    <value>https://github.com/vovainfo/Bouncer</value>
+  </configurationInformationAddress>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>UseWithWarnings</modalityUseMode>
